@@ -2,9 +2,9 @@
   "name": "dynamix-engine",
   "version": "0.1.0",
   "description": "A Game Engine For Humans",
-  "main": "index.js",
+  "main": "bin/main.js",
   "scripts": {
-    "test": "electron ."
+    "start": "electron bin/main.js"
   },
   "repository": {
     "type": "git",
@@ -14,5 +14,9 @@
     "game-engine"
   ],
   "author": "Elham Aryanpur",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "jquery-ui": "^1.12.1"
+  }
 }

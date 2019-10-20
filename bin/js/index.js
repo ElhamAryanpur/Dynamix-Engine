@@ -1,23 +1,27 @@
+var $ = jQuery = require('jquery')
+require('jquery-ui-dist/jquery-ui')
+
 var code = document.getElementById("CODE");
 code.setAttribute("style", "overflow: auto;");
 code.style.height = window.innerHeight;
 
 //newEvent({type: "div", bg: "#6AAAC9"});
 
-/*$(window).bind('keydown', function(event) {
+$(window).bind('keydown', function(event) {
     if (event.ctrlKey || event.metaKey) {
         switch (String.fromCharCode(event.which).toLowerCase()) {
 
             case 's':
+                $("#menu-save").trigger("click");
                 return false;
-
-            case 'r':
-                compile(data);
+            
+            case 'l':
+                $("#menu-level").trigger("click");
                 return false;
 
         }
     }
-});*/
+});
 
 $("#LEVEL").dialog({
     autoOpen: false,
@@ -37,10 +41,10 @@ $("#menu").dialog({
         my: "top",
         at: "top"
     },
-    maxWidth: 800,
-    maxHeight: 160,
-    minWidth: 800,
-    minHeight: 160,
+    maxWidth: 395,
+    maxHeight: 120,
+    minWidth: 395,
+    minHeight: 120,
     dialogClass: 'no-close'
 });
 
