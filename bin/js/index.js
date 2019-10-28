@@ -5,8 +5,6 @@ var code = document.getElementById("CODE");
 code.setAttribute("style", "overflow: auto;");
 code.style.height = window.innerHeight;
 
-//newEvent({type: "div", bg: "#6AAAC9"});
-
 $(window).bind('keydown', function(event) {
     if (event.ctrlKey || event.metaKey) {
         switch (String.fromCharCode(event.which).toLowerCase()) {
